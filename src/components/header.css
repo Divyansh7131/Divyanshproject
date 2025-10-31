@@ -1,13 +1,26 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+body {
+    padding-top: 80px; 
+}
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgb(255, 255, 255)!important;
     font-size: 20px;
     font-style: italic;
 }
+
 .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 70px;
 }
+
 .dropdown-item {
     display: block;
     width: 100%;
@@ -15,29 +28,33 @@
     clear: both;
     font-weight: 400;
     color: rgb(255, 255, 255);
-    font-Size: 20px;
+    font-size: 20px;
     font-style: italic;
     text-align: inherit;
     text-decoration: none;
     background-color: #ff7f50;
     border: 0;
 }
-.navbar-brand{
+
+.navbar-brand {
     font-style: italic;
     font-size: 35px;
 }
-.text{
+
+.text {
     margin: auto;
     color: rgb(253, 251, 250);
     font-size: 60px;
     font-style: italic;
 }
-p{
+
+p {
     font-style: italic;
-   font-size: 25px;
+    font-size: 25px;
 }
-.btn{
-    width: 100pxpx;
+
+.btn {
+    width: 100px;
     color: aliceblue;
     background-color: #ff7f50;
     border-radius: 10px;
