@@ -52,8 +52,8 @@ export default function ContactPage() {
               <Phone size={24} />
             </div>
             <h3 className="card-title">Phone</h3>
-            <p className="card-text">+1 (555) 123-4567</p>
-            <p className="card-text">+1 (555) 765-4321</p>
+            <p className="card-text">+91 70******42</p>
+            <p className="card-text">+91 80******23</p>
           </div>
 
           <div className="info-card">
