@@ -18,6 +18,8 @@ import Chinies from './components/chinies_food';
 import { Fast_food } from './components/fast_food';
 import { Cart } from './components/Cart';
 import { CartProvider } from './context/CartContext';
+import RegisterForm from './components/Register';
+import ForgotPassword from './components/Forgotpassword';
 
 const App = () => {
   return (
@@ -42,6 +44,8 @@ const App = () => {
           <Route path="/sea_food" element={<Sea_food />} />
           <Route path="/fast_food" element={<Fast_food />} />
           <Route path="/chinies_food" element={<Chinies />} />
+          <Route path="/Register" element={<RegisterForm />} />
+          <Route path="/Forgotpassword" element={<ForgotPassword />} />
         </Routes>
 
         <Footer />

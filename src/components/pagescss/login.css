@@ -1,41 +1,111 @@
-#login-container {
-    background-color: white;
-    padding: 20px;
-    border-color: #05089c;
-    border-width: 3px;
-    border-radius: 10px;
-    box-shadow: 7px 8px 5px 7px;
-    width: 300px;
-    margin-top: 150px ;
-    
-}
-#login-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.input-group {
-    margin-bottom: 15px;
-}
-.input-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-.input-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-.btn {
-    width: 100%;
-    padding: 10px;
-    background-color: #ff7f50;
-    color: white;
-    border: 1px;
-    border-radius: 5px;
-    cursor: pointer;
+/* Background Wrapper */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: linear-gradient(135deg, #ff6b35, #ff8c42, #ffa726, #ffc870);
 }
 
-.logbtn:hover{
-color: chartreuse;
+/* Card */
+.login-card {
+  background: #fff;
+  width: 380px;
+  border-radius: 14px;
+  padding: 30px 28px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.4s ease;
+}
+
+/* Header */
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-title {
+    margin-top: 12px;
+    font-weight: 700;
+    color: #ff6b35;
+}
+
+/* Input Labels & Inputs */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-control {
+  border: 2px solid #e2e2e2;
+  border-radius: 8px;
+  padding: 10px;
+  transition: 0.25s;
+}
+
+.form-control:focus {
+  border-color: #ffa726;
+  box-shadow: none;
+}
+
+/* Button */
+.login-btn {
+  width: 100%;
+  background: #ff6b35;
+  border: none;
+  padding: 12px;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.login-btn:hover {
+  background: #ffa726;
+  transform: scale(1.04);
+}
+
+/* Links */
+.more-links {
+  text-align: center;
+  font-weight: 600;
+  margin-top: 22px;
+}
+
+.more-links a {
+  color: #ff8c42;
+  text-decoration: none;
+  margin-left: 5px;
+}
+
+.more-links a:hover {
+  text-decoration: underline;
+}
+
+/* Small Responsive */
+@media screen and (max-width: 450px) {
+  .login-card {
+    width: 100%;
+  }
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
